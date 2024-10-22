@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photosynthesis Explanation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+
+      body {
+        background: #1a1d21;
+        color: white;
+        padding: 20px;
+        max-width: 430px;
+        margin: 0 auto;
+      }
+
+      .status-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+
+      .search-container {
+        background: #2c2f33;
+        border-radius: 20px;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        border: 1px solid #3d4044;
+        gap: 12px;
+      }
+
+      .search-container input {
+        background: none;
+        border: none;
+        color: white;
+        width: 100%;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .sources-section {
+        margin: 20px 0;
+      }
+
+      .sources-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      .sources-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .source-card {
+        background: #2c2f33;
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 14px;
+      }
+
+      .source-card .logo {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      .content-section {
+        margin-top: 25px;
+      }
+
+      h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #e1e1e1;
+      }
+
+      .chemical {
+        font-family: monospace;
+      }
+
+      ul {
+        list-style-position: inside;
+        margin-left: 10px;
+      }
+
+      li {
+        margin-bottom: 12px;
+        line-height: 1.5;
+        color: #e1e1e1;
+      }
+
+      .events-button {
+        background: #2c2f33;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        float: right;
+        cursor: pointer;
+      }
+
+      .icon {
+        color: #ffffff;
+      }
+
+      .signal-icons {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div>10:42</div>
+      <div class="signal-icons">
+        <i data-lucide="signal" class="icon"></i>
+        <i data-lucide="battery-full" class="icon"></i>
+      </div>
+    </div>
+
+    <div class="search-container">
+      <i data-lucide="menu" class="icon"></i>
+      <input type="text" value="Explain photosynthesis" readonly />
+      <i data-lucide="search" class="icon"></i>
+    </div>
+
+    <div class="sources-section">
+      <div class="sources-title">
+        <i data-lucide="globe" class="icon"></i>
+        Sources
+      </div>
+      <div class="sources-grid">
+        <div class="source-card">
+          photosynthesis - definition,process,diagrams- Byju's
+          <div style="background: #9c42ff" class="logo">B</div>
+        </div>
+        <div class="source-card">
+          photosynthesis - definition,process,equation- Wikipedia
+          <div style="background: #666" class="logo">W</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <p>
+        Photosynthesis is a vital biological process through which plants,
+        algae, and certain bacteria convert light energy into chemical energy.
+        This process not only sustains the organisms that perform it but also
+        supports life on Earth by producing oxygen and organic compounds.
+      </p>
+
+      <h1>Overview of Photosynthesis</h1>
+      <h1>Definition and Importance</h1>
+
+      <p>
+        Photosynthesis is defined as the process where phototrophic organisms,
+        primarily green plants, use sunlight, carbon dioxide (<span
+          class="chemical"
+          >CO<sub>2</sub></span
+        >), and water (<span class="chemical">H<sub>2</sub>O</span>) to produce
+        glucose (<span class="chemical"
+          >C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></span
+        >) and oxygen (<span class="chemical">O<sub>2</sub></span
+        >).
+      </p>
+
+      <p>This process is crucial for several reasons:</p>
+      <ul>
+        <li>
+          It produces oxygen, which is essential for the respiration of most
+          living organisms.
+        </li>
+        <li>
+          It converts solar energy into chemical energy stored in glucose, which
+          serves as food for plants and other organisms that consume them
+        </li>
+      </ul>
+
+      <button class="events-button">
+        <i data-lucide="calendar" class="icon"></i>
+        Events
+      </button>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
